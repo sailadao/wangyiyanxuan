@@ -1,11 +1,21 @@
 <template>
   <div class="app">
-    123456789
+    <!--显示当前路由组件-->
+    <router-view/>
+
+    <Footer/>
   </div>
 </template>
 
 <script>
-  export default {}
+  import Footer from './components/Footer/Footer'
+  import Header from './components/Header/Header'
+  export default {
+    components: {
+      Footer,
+      Header
+    }
+  }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
@@ -17,5 +27,5 @@
     .app
       width 100%
       height 100%
-      background rebeccapurple
+
 </style>
