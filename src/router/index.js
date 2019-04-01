@@ -4,10 +4,11 @@ import VueRouter from 'vue-router'
 
 import routes from './routes'
 
+// 声明并使用
 Vue.use(VueRouter)
 
 export default new VueRouter({
-  //去掉地址栏的#号
-  mode:'history',
+  // 去掉 #
+  mode: 'history',
   routes
 })

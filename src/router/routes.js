@@ -1,47 +1,53 @@
+// 包含所有路由的数组
 import Msite from '../pages/Msite/Msite'
-import Classify from '../pages/Classify/Classify'
 import Search from '../pages/Search/Search'
+import Classify from '../pages/Classify/Classify'
+import Identify from '../pages/Identify/Identify'
 import Order from '../pages/Order/Order'
 import Profile from '../pages/Profile/Profile'
 
 export default [
   {
-    path:'/msite',
+    path: '/msite',
     component: Msite,
-    meta:{
-      isShow:true
+    meta: {
+      isShow: true
     }
   },
   {
-    path:'/classify',
-    component: Classify,
-    meta:{
-      isShow:true
-    }
-  },
-  {
-    path:'/search',
+    path: '/search',
     component: Search,
-    meta:{
-      isShow:true
+  },
+  {
+    path: '/classify',
+    component: Classify,
+    meta: {
+      isShow: true
     }
   },
   {
-    path:'/order',
+    path: '/identify',
+    component: Identify,
+    meta: {
+      isShow: true
+    }
+  },
+  {
+    path: '/order',
     component: Order,
-    meta:{
-      isShow:true
+    meta: {
+      isShow: true
     }
   },
   {
-    path:'/profile',
+    path: '/profile',
     component: Profile,
-    meta:{
-      isShow:true
+    meta: {
+      isShow: true
     }
   },
   {
-    path:'/',
-    redirect:'/msite'
+    path: '/',
+    redirect: '/msite'
   }
 ]

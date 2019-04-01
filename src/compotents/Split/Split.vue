@@ -1,7 +1,5 @@
 <template>
-  <div>
-    Classify.vue
-  </div>
+  <div class="split"></div>
 </template>
 
 <script>
@@ -9,5 +7,8 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-
+  .split
+    width 100%
+    height 30px
+    background: #F4F4F4
 </style>
